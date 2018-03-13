@@ -1,20 +1,18 @@
 import React from 'react';
 import { Footer } from 'react-materialize'
+import FilterLink from './FilterLink'
 
 const TodoFooter = () => (
-  <Footer copyrights="My Stuff"
-    moreLinks={
-      <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
-    }
+  <Footer
     links={
       <ul>
-        <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
+        <li><FilterLink>All</FilterLink></li>
+        <li><FilterLink>Completed</FilterLink></li>
+        <li><FilterLink>Active</FilterLink></li>
       </ul>
     }
-    className='example'
   >
-    <h5 className="white-text">Footer Content</h5>
-    <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    <h5 className="white-text">My Stuff</h5>
   </Footer>
     
 )
