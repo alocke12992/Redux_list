@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import TodoForm from './components/TodoForm';
-import List from './components/List';
-import Footer from './components/Footer';
+import TodoList from './components/TodoList';
+import TodoFooter from './components/TodoFooter';
+
+
 const App = () => (
   <div className="App">
+    <TodoForm />
+    <TodoList />
+    <TodoFooter />
   </div>
 )
 
