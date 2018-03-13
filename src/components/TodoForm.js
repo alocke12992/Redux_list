@@ -18,7 +18,7 @@ class TodoForm extends React.Component
     const { dispatch, id } = this.props;
     const todo = { name, id, complete: false }
     dispatch( { type: 'ADD_TODO', todo } )
-    dispatch( 'INC_ID' )
+    dispatch( incId() )
     this.setState( { name: '' } )
   }
 
