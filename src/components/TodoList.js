@@ -1,14 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { Input } from 'react-materialize'
+import { connect } from 'react-redux';
+import Todo from './Todo';
 
 const TodoList = ({ todos }) => (
   <ul>
-    {todos.map((t, i) => {
+    {todos.map(t => {
       return (
-        <li key={i}>
-          <Input name='group1' type='checkbox' value='green' label={t} className='filled-in' defaultChecked='checked' />
-        </li>
+        <Todo key={t.id} {...t} />
       )
     })
     }
